@@ -4,7 +4,7 @@ image:
 tasks:
   - name: Start development environment
     command: |
-      npx @teambit/bvm install --yes
+      npx --yes @teambit/bvm install
 
     # before: |
     #   eval $(command gp env -e)
