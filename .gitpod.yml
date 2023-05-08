@@ -5,17 +5,14 @@ tasks:
   - name: Start development environment
     before: |
       eval $(command gp env -e)
-      npx @teambit/bvm install --yes
       doppler configure set token $DOPPLER_LOCAL_TOKEN --no-check-version
       doppler setup --project dechea --config dev --no-check-version
       pnpm config set auto-install-peers true
       pnpm config set '@dechea:registry' https://node.bit.cloud
       doppler run --command='npm config set "//node.bit.cloud/:_authToken" $BIT_TOKEN'
       git config pull.rebase false
-    # init: |
-    #   pnpm i
-    # command: |
-    #   pnpm dev
+    command: |
+      npx @teambit/bvm install --yes
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 # ports:
