@@ -7,9 +7,13 @@ tasks:
       eval $(command gp env -e)
       SHELL=$(which bash) npx --yes @teambit/bvm install
       source ~/.bashrc
+      bit config set analytics_reporting false
+      bit config set anonymous_reporting false
+      bit install
       pnpm config set auto-install-peers true
       git config pull.rebase false
     command: |
+      bit config set user.token $BIT_TOKEN
       bit start
 
     # before: |
