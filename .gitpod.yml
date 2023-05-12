@@ -14,13 +14,11 @@ tasks:
       git config pull.rebase false
     command: |
       bit config set user.token $BIT_TOKEN
+      bit init
+      bit scope set $BIT_SCOPE
+      bit import $BIT_IMPORT
       bit start
 
-    # before: |
-    #   doppler configure set token $DOPPLER_LOCAL_TOKEN --no-check-version
-    #   doppler setup --project dechea --config dev --no-check-version
-    #   pnpm config set '@dechea:registry' https://node.bit.cloud
-    #   doppler run --command='npm config set "//node.bit.cloud/:_authToken" $BIT_TOKEN'
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
