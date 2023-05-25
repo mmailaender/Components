@@ -1,74 +1,24 @@
-Enterprise App development finally made easy.
+Ephemeral component driven development - A new era of enterprise collaboration
 
-# Features
-## Frontend & Backend | [Nextjs](https://swiy.co/nextjs)
+# Vision
+- create a new lane in the UI
+- create a new component in Bit from one of the many aspects/starter templates | Or edit an existing one
+- click on the Button `Develop` (The component opens in an ephemeral IDE)
+- user does his changes and `bit export` it
+- user merges the lane into main over UI
 
-## Env & Secret Manager | [Doppler](https://swiy.co/doppler)
-All env & secrets will be managed at one place, and provided to your development environment, Repository (e.g. GitHub) and your hosting platform (e.g. Vercel, Cloudflare Pages...). If one of your team members leaves the team, or you have a secret breach, you can rotate your secrets with one click.
+# Getting started
+To start a Gitpod session you need to create a Gitpod Account and add your BIT_TOKEN as a Variable to `User Settings` < `Variables`
+Then call the following URL but replace beforehand the `BIT_SCOPE` & `BIT_IMPORT`  variable URL encoded based on what you want to import.
+`BIT_SCOPE = yourOrganization.yourScope`
+`BIT_IMPORT = yourOrganization.yourScope/**`
 
-## UI Components | [Reshaped](https://swiy.co/reshaped-docs)
-Design library with native **Design Token** support and Figma files for prototyping.
+https://gitpod.io/#BIT_SCOPE=<ADD-YOUR-ENCODED-VARIABLE>,BIT_IMPORT=<ADD-YOUR-ENCODED-VARIABLE>/https://github.com/mmailaender/Components/tree/main
 
-## Database: [Fauna](https://swiy.co/fauna)
-
-## Components: [Bit](https://swiy.co/bit)
-
-## IDE: VS Code with [Gitpod](https://swiy.co/gitpod) 
-
-you can use Gitpod 50 hours per month for free
-
-## GraphQL Client | GQTY
-GraphQL Client
-
-## Auth | Clerk
-
-# Getting Started
-
-## Gitpod
-
-Install the Gitpod Plugin
-[Chrome](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki) |
-[Firefox](https://addons.mozilla.org/en-US/firefox/addon/gitpod/)
-
-and create a [Gitpod Account](https://swiy.co/gitpod)
-
-## Doppler
-
-Create a [Doppler Account](https://swiy.co/doppler-login)
-
-Create a [Project and environment](https://swiy.co/doppler-docs). Take the name of the project and the slug from the environment and add it in the [.gitpod.yml](.gitpod.yml#L10)
-
-Set up the Integration
-1. Vercel
-2. Github
-
-## Clerk
-
-Create a [Clerk Account](https://swiy.io/clerk)
-
-Set the following environment variables in Doppler. You get the values from your [Clerk API Dashboard](https://swiy.io/clerk-set-env-keys).
-- PUBLIC_NEXT_CLERK_FRONTEND_API
-- CLERK_API_KEY
-- CLERK_JWT_KEY
-
-# Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
+With that, you get a full ephemeral development environment. After you finished your work and run `bit export` you can throw the instance away, and get a new one.
 
 # TODO
 
-1. Replace [Doppler Setup](.gitpod.yml#L10) with --project \<YourProject> --config \<YourConfig>
-2. Replace [npm Bit config](.gitpod.yml#L11) with @\<bit-account-name>
-3. i18n
+1. To skip GitHub completely we need a native integration between Bit and Gitpod, so that Gitpod knows Bit as a source control system
+2. We need an easy way to add the two variables BIT_SCOPE and BIT_IMPORT to the URL.  Gitpod has created a Plugin that shows a button at every GitHub repo. With that, the URL will be composed automatically. Having something like that in the Bit UI integrated would solve this problem.
+3. Create new component from Bit UI
