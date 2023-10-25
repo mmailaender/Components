@@ -1,6 +1,3 @@
-image:
-  file: .gitpod.Dockerfile
-
 tasks:
   - name: Start development environment
     before: |
