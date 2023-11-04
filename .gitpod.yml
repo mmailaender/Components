@@ -47,3 +47,5 @@ vscode:
     - PulkitGangwar.nextjs-snippets
     - PKief.material-icon-theme
     - TeamHub.teamhub
+    # Bit
+    - https://pub-5513a9c56b7943fb986dd9a6abaea6c6.r2.dev/bit.vscode-bit-1.0.12.vsix
