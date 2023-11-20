@@ -35,17 +35,32 @@ github:
 vscode:
   extensions:
     - christian-kohler.npm-intellisense
-    - eamodio.gitlens
     - esbenp.prettier-vscode
     - christian-kohler.path-intellisense
     - aaron-bond.better-comments
     - meganrogge.template-string-converter
     - leodevbro.blockman
     - Gruntfuggly.todo-tree
-    - unifiedjs.vscode-mdx
-    - bradlc.vscode-tailwindcss
-    - PulkitGangwar.nextjs-snippets
     - PKief.material-icon-theme
-    - TeamHub.teamhub
+    - wix.vscode-import-cost
+
+    # Git
+    - eamodio.gitlens
+
+    # ChatGPT / AI
+    - Codeium.codeium
+
+    ### Language Support
+    # Svelte
+    - svelte.svelte-vscode
+    - fivethree.vscode-svelte-snippets
+    - garlandcrow.vscode-svelte-pluskit-snippets
+
+    # Tailwind
+    - bradlc.vscode-tailwindcss
+
+    # Env
+    - IronGeek.vscode-env
+
     # Bit
     - https://pub-5513a9c56b7943fb986dd9a6abaea6c6.r2.dev/bit.vscode-bit-1.0.12.vsix
