@@ -6,7 +6,6 @@ tasks:
       source ~/.bashrc
       bit config set analytics_reporting false
       bit config set anonymous_reporting false
-      bit install
       pnpm config set auto-install-peers true
       git config pull.rebase false
     command: |
@@ -14,6 +13,7 @@ tasks:
       bit new svelte my-svelte-workspace --env bitdev.svelte/svelte
       bit scope set $BIT_SCOPE
       bit import $BIT_IMPORT
+      bit install
       # bit start
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
