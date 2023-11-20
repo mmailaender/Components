@@ -1,6 +1,6 @@
 tasks:
   - name: Start development environment
-    before: |
+    init: |
       eval $(command gp env -e)
       SHELL=$(which bash) npx --yes @teambit/bvm install
       source ~/.bashrc
@@ -63,4 +63,4 @@ vscode:
     - IronGeek.vscode-env
 
     # Bit
-    - https://pub-5513a9c56b7943fb986dd9a6abaea6c6.r2.dev/bit.vscode-bit-1.0.14.vsix
+    - https://pub-5513a9c56b7943fb986dd9a6abaea6c6.r2.dev/bit.vscode-bit-1.0.15.vsix
