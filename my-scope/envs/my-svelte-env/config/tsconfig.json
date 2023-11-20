@@ -1,0 +1,11 @@
+/**
+     * @see https://bit.dev/reference/typescript/typescript-config
+     */
+     {
+        "extends": "@tsconfig/svelte/tsconfig.json",
+        "compilerOptions": {
+          "moduleResolution": "node"
+        },  
+        "exclude": ["artifacts", "public", "dist", "node_modules", "package.json", "**/*.cjs"],
+        "include": ["**/*", "**/*.json", "**/*.svelte"]
+      }

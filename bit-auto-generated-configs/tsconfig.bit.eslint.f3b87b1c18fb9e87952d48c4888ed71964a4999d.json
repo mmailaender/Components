@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es2019",
+      "DOM",
+      "ES6",
+      "DOM.Iterable",
+      "ScriptHost"
+    ],
+    "target": "es2015",
+    "module": "CommonJS",
+    "jsx": "react",
+    "composite": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "../my-scope/envs/my-svelte-env/dist",
+    "../my-scope/envs/my-svelte-env/package.json",
+    "../my-scope/envs/my-svelte-env/dist"
+  ],
+  "include": [
+    "../my-scope/envs/my-svelte-env/**/*",
+    "../my-scope/envs/my-svelte-env/**/*.json",
+    "./global-types/**/*"
+  ]
+}
