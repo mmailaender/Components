@@ -26,5 +26,6 @@
   "typescript.suggest.completeFunctionCalls": true,
 
   // Custom VScode Icon Theme
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "bit.binPath": "/home/gitpod/bin/bit"
 }
