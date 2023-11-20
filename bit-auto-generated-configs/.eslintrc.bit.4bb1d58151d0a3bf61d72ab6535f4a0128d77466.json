@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "/home/gitpod/.bvm/versions/1.3.24/bit-1.3.24/node_modules/@teambit/react.eslint-config-bit-react/dist/index.js"
-  ],
-  "rules": {},
-  "parserOptions": {
-    "project": "/workspace/Components/my-svelte-workspace/bit-auto-generated-configs/tsconfig.bit.eslint.f3b87b1c18fb9e87952d48c4888ed71964a4999d.json"
-  }
-}
