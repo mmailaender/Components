@@ -3,6 +3,9 @@
 # Bit
 .bit
 public
+# Bit Custom set by us
+workspace.jsonc
+.bitmap
 
 # Logs
 logs
