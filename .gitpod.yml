@@ -2,7 +2,7 @@ tasks:
   - name: Start development environment
     init: |
       eval $(command gp env -e)
-      SHELL=$(which bash) npx --yes @teambit/bvm install
+      time SHELL=$(which bash) npx --yes @teambit/bvm install
       source ~/.bashrc
       bit config set analytics_reporting false
       bit config set anonymous_reporting false
@@ -10,9 +10,9 @@ tasks:
       git config pull.rebase false
     command: |
       bit config set user.token $BIT_TOKEN
-      bit init
-      bit scope set $BIT_SCOPE
-      bit import $BIT_IMPORT
+      time bit init
+      time bit scope set $BIT_SCOPE
+      time bit import $BIT_IMPORT
       # bit install
       # bit start
 
