@@ -1,4 +1,4 @@
-image: bitcli/bit
+image: bitcli/bit:latest
 
 tasks:
   - name: Start development environment
