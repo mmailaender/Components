@@ -3,15 +3,11 @@ image:
   
 tasks:
   - name: Start development environment
-    init: |
-      eval $(command gp env -e)
-      time SHELL=$(which bash) npx --yes @teambit/bvm install
-      source ~/.bashrc
+    command: |
       bit config set analytics_reporting false
       bit config set anonymous_reporting false
       pnpm config set auto-install-peers true
       git config pull.rebase false
-    command: |
       bit config set user.token $BIT_TOKEN
       time bit init
       time bit scope set $BIT_SCOPE
