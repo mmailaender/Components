@@ -1,3 +1,4 @@
 FROM gitpod/workspace-full:latest
 
-RUN SHELL=$(which bash) npx --yes @teambit/bvm install && source ~/.bashrc
+SHELL ["bash", "-lic"]
+RUN npx --yes @teambit/bvm install && source ~/.bashrc
