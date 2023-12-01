@@ -1,15 +1,14 @@
 image:
   file: .gitpod.Dockerfile
-  
+
 tasks:
   - name: Start development environment
+    init: |
+      bit init
     command: |
-      bit config set analytics_reporting false
-      bit config set anonymous_reporting false
       pnpm config set auto-install-peers true
       git config pull.rebase false
       bit config set user.token $BIT_TOKEN
-      time bit init
       time bit scope set $BIT_SCOPE
       time bit import $BIT_IMPORT
       # bit install
